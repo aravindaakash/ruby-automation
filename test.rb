@@ -2,7 +2,7 @@ class Test
     def initialize(git_token, fr_token)
         @git_token = git_token
         @fr_token = fr_token
-        puts ENV['PR_NUMBER']
+        puts "PR = #{ENV['PR_NUMBER']}"
         puts @git_token
         puts @fr_token
     end
