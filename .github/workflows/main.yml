@@ -1,6 +1,7 @@
 name: Update stable tag to the newly added test cases
 on:
-  push:
+  pull_request:
+    types: [ closed ]
     branches: [main] #Used to manually trigger workflow
 
   workflow_dispatch:
