@@ -7,11 +7,11 @@ on:
 
 jobs:
   upload-tags-workflow:
-    runs-on: [self-hosted, Linux]
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ruby-version: 2.6.6
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - run: bundle exec rake
+        - uses: actions/checkout@v3
+        - uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: 2.6.6
+            bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        - run: bundle exec rake
