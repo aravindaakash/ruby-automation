@@ -12,3 +12,10 @@ jobs:
       - uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
           GITHUB_TOKEN: '${{ secrets.GIT_TOKEN }}'
+          PR_FILTER: "labelled"
+          PR_LABELS: "autoupdate"
+          MERGE_MSG: "Branch was auto-updated to staging."
+          RETRY_COUNT: "5"
+          RETRY_SLEEP: "300"
+          MERGE_CONFLICT_ACTION: "fail"
+
