@@ -1,3 +1,4 @@
+# this is the test commit
 class Test
     def initialize(git_token, fr_token)
         @git_token = git_token
