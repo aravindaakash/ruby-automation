@@ -13,3 +13,4 @@ if __FILE__ ==$0
     freshrelease_token = ARGV[1].strip
     Test.new(github_token, freshrelease_token) 
 end
+#sample
