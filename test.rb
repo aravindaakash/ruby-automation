@@ -1,3 +1,4 @@
+# this is the test commit from pr6
 # this is the test commit from pr3
 class Test
     def initialize(git_token, fr_token)
